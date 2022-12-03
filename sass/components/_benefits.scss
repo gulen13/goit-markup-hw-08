@@ -1,0 +1,30 @@
+.benefits-list {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+.benefits-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.benefits-icon {
+  background-color: var(--secondary-background-color);
+  min-width: 270px;
+  min-height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefits-list__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  margin-bottom: 10px;
+}
+.benefits-list__paragraph {
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+  text-align: left;
+}

@@ -1,0 +1,38 @@
+.work {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+.work-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--main-text-color);
+  margin-bottom: 52px;
+}
+.work-list {
+  display: flex;
+  padding-left: 0;
+}
+.work-list__item {
+  position: relative;
+}
+.work-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.overlay__text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
