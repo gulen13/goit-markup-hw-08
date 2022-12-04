@@ -1,6 +1,10 @@
 .work {
   padding-top: 0px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
 }
 .work-title {
   font-size: 36px;
