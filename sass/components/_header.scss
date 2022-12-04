@@ -5,6 +5,9 @@ header {
   display: flex;
   align-items: center;
 }
+.header__group {
+  display: none;
+}
 .header__group > .header-contacts {
   display: flex;
   align-items: center;
@@ -14,10 +17,17 @@ header {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   color: var(--main-logo-button-color);
   margin-right: 93px;
+  padding: 15px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    padding: 0;
+  }
 }
 .header__logo--color {
   color: var(--main-text-color);

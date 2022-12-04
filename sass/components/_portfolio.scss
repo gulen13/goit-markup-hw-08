@@ -1,7 +1,16 @@
 .portfolio-btn-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .portfolio-list {
   display: flex;
@@ -38,7 +47,6 @@
   border: 0;
   color: var(--main-text-color);
   background-color: var(--secondary-background-color);
-  margin-right: 8px;
   min-width: 73px;
   min-height: 38px;
   padding: 6px 22px;

@@ -2,9 +2,14 @@
 @import "./base/card-set";
 @import "./base/reset";
 
+// util;
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
 // components
 @import "./components/container";
 @import "./components/section";
+@import "./components/mobile-menu";
 @import "./components/header";
 @import "./components/nav";
 @import "./components/hero";
@@ -18,7 +23,3 @@
 @import "./components/typography";
 @import "./components/btn";
 @import "./components/cardset";
-
-// util;
-@import "./utils/variables";
-@import "./utils/visually-hidden";
