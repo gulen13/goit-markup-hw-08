@@ -65,6 +65,15 @@
             </li>
           </ul>
         </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -102,12 +111,43 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    class="portfolio-thumb__image"
-                    src="./images/technokryak.jpg"
-                    alt="Веб-сайт Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/technokryak/img370-@1x-min.jpg 1x,
+                        ./images/portfolio/technokryak/img370-@2x-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/technokryak/img354-@1x-min.jpg 1x,
+                        ./images/portfolio/technokryak/img354-@2x-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/technokryak/img450-@1x-min.jpg 1x,
+                        ./images/portfolio/technokryak/img450-@2x-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-thumb__image"
+                      src="./images/portfolio/technokryak/img450-@1x-min.jpg"
+                      alt="Веб-сайт Технокряк"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="overlay-portfolio">
                     <p class="overlay-portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -126,12 +166,43 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    class="portfolio-thumb__image"
-                    src="./images/poster.jpg"
-                    alt="Дизайн Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/poster/img370-@1x-1-min.jpg 1x,
+                        ./images/portfolio/poster/img370-@2x-1-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/poster/img354-@1x-1-min.jpg 1x,
+                        ./images/portfolio/poster/img354-@2x-1-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/poster/star-450-@1x-min.jpg 1x,
+                        ./images/portfolio/poster/star-450-@2x-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-thumb__image"
+                      src="./images/portfolio/poster/star-450-@1x-min.jpg"
+                      alt="Дизайн Постер New Orlean vs Golden Star"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="overlay-portfolio">
                     <p class="overlay-portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -143,7 +214,7 @@
                 </div>
                 <div class="portfolio-item-div">
                   <h2 class="portfolio-item-div__title">
-                    Постер New Orlean vs Golden Star
+                    Постер New Orlean vs Golden
                   </h2>
                   <p class="portfolio-item-div__paragraph">Дизайн</p>
                 </div>
@@ -152,12 +223,43 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    class="portfolio-thumb__image"
-                    src="./images/seafood.jpg"
-                    alt="Додаток Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/seafood/img370-@1x-2-min.jpg 1x,
+                        ./images/portfolio/seafood/img370-@2x-2-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/seafood/img354-@1x-2-min.jpg 1x,
+                        ./images/portfolio/seafood/img354-@2x-2-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/seafood/img450-@1x-2-min.jpg 1x,
+                        ./images/portfolio/seafood/img450-@2x-2-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-thumb__image"
+                      src="./images/portfolio/seafood/img450-@1x-2-min.jpg"
+                      alt="Додаток Ресторан Seafood"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="overlay-portfolio">
                     <p class="overlay-portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -176,12 +278,43 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    class="portfolio-thumb__image"
-                    src="./images/prime.jpg"
-                    alt="Маркетинг Проєкт Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/prime/img370-@1x-3-min.jpg 1x,
+                        ./images/portfolio/prime/img370-@2x-3-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/prime/img354-@1x-3-min.jpg 1x,
+                        ./images/portfolio/prime/img354-@2x-3-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/prime/img450-@1x-3-min.jpg 1x,
+                        ./images/portfolio/prime/img450-@2x-3-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-thumb__image"
+                      src="./images/portfolio/prime/img450-@1x-3-min.jpg"
+                      alt="Маркетинг Проєкт Prime"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="overlay-portfolio">
                     <p class="overlay-portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -200,12 +333,43 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    class="portfolio-thumb__image"
-                    src="./images/boxes.jpg"
-                    alt="Додаток Проєкт Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/boxes/img370-@1x-min.jpg 1x,
+                        ./images/portfolio/boxes/img370-@2x-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/boxes/img354-@1x-min.jpg 1x,
+                        ./images/portfolio/boxes/img354-@2x-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/boxes/img450-@1x-min.jpg 1x,
+                        ./images/portfolio/boxes/img450-@2x-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-thumb__image"
+                      src="./images/portfolio/boxes/img450-@1x-min.jpg"
+                      alt="Додаток Проєкт Boxes"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="overlay-portfolio">
                     <p class="overlay-portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -224,12 +388,43 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    class="portfolio-thumb__image"
-                    src="./images/inspiration.jpg"
-                    alt="Веб-сайт Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/inspiration/img370-@1x-5-min.jpg 1x,
+                        ./images/portfolio/inspiration/img370-@2x-5-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/inspiration/img354-@1x-5-min.jpg 1x,
+                        ./images/portfolio/inspiration/img354-@2x-5-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/inspiration/img450-@1x-5-min.jpg 1x,
+                        ./images/portfolio/inspiration/img450-@2x-5-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-thumb__image"
+                      src="./images/portfolio/inspiration/img450-@1x-5-min.jpg"
+                      alt="Веб-сайт Inspiration has no Borders"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="overlay-portfolio">
                     <p class="overlay-portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -250,12 +445,43 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    class="portfolio-thumb__image"
-                    src="./images/limited.jpg"
-                    alt="Дизайн Видання Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/limited/img370-@1x-6-min.jpg 1x,
+                        ./images/portfolio/limited/img370-@2x-6-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/limited/img354-@1x-6-min.jpg 1x,
+                        ./images/portfolio/limited/img354-@2x-6-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/limited/img450-@1x-6-min.jpg 1x,
+                        ./images/portfolio/limited/img450-@2x-6-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-thumb__image"
+                      src="./images/portfolio/limited/img450-@1x-6-min.jpg"
+                      alt="Дизайн Видання Limited Edition"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="overlay-portfolio">
                     <p class="overlay-portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -276,12 +502,43 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    class="portfolio-thumb__image"
-                    src="./images/lab.jpg"
-                    alt="Маркетинг Проєкт LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/lab/img370-@1x-7-min.jpg 1x,
+                        ./images/portfolio/lab/img370-@2x-7-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/lab/img354-@1x-7-min.jpg 1x,
+                        ./images/portfolio/lab/img354-@2x-7-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/lab/img450-@1x-7-min.jpg 1x,
+                        ./images/portfolio/lab/img450-@2x-7-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-thumb__image"
+                      src="./images/portfolio/lab/img450-@1x-7-min.jpg"
+                      alt="Маркетинг Проєкт LAB"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="overlay-portfolio">
                     <p class="overlay-portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -300,12 +557,43 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link link" href="">
                 <div class="portfolio-thumb">
-                  <img
-                    class="portfolio-thumb__image"
-                    src="./images/business.jpg"
-                    alt="Додаток Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <!-- Desktop screen -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/business/img370-@1x-8-min.jpg 1x,
+                        ./images/portfolio/business/img370-@2x-8-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet screen -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/business/img354-@1x-8-min.jpg 1x,
+                        ./images/portfolio/business/img354-@2x-8-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile screen -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/business/img450-@1x-8-min.jpg 1x,
+                        ./images/portfolio/business/img450-@2x-8-min.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-thumb__image"
+                      src="./images/portfolio/business/img450-@1x-8-min.jpg"
+                      alt="Додаток Growing Business"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="overlay-portfolio">
                     <p class="overlay-portfolio__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -443,5 +731,99 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link--current link" href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item-tel">
+          <a class="mobile-contacts-link-tel link" href="tel:+380961111111">
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts-item-mail">
+          <a
+            class="mobile-contacts-link-mail link"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a
+            class="mobile-socials-link link"
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="іконка instagram"
+            >Instagram</a
+          >
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            class="mobile-socials-link link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="іконка twitter"
+            >Twitter</a
+          >
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            class="mobile-socials-link link"
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="іконка facebook"
+            >Facebook</a
+          >
+        </li>
+        <li class="mobile-socials-item">
+          <a
+            class="mobile-socials-link link"
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="іконка linkedin"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

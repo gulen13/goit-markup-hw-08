@@ -146,9 +146,14 @@
           <ul class="work-list list">
             <li class="work-list__item">
               <img
-                src="./images/box1.jpg"
+                srcset="
+                  ./images/box/box-1@1x-min.jpg 1x,
+                  ./images/box/box-1@2x-min.jpg 2x
+                "
+                src="./images/box/box-1@1x-min.jpg"
                 alt="Набір тексту на компьютері"
                 width="370"
+                loading="lazy"
               />
               <div class="overlay">
                 <p class="overlay__text">Десктопні додатки</p>
@@ -156,9 +161,14 @@
             </li>
             <li class="work-list__item">
               <img
-                src="./images/box2.jpg"
+                srcset="
+                  ./images/box/box-2@1x-min.jpg 1x,
+                  ./images/box/box-2@2x-min.jpg 2x
+                "
+                src="./images/box/box-2@1x-min.jpg"
                 alt="Перегляд макету на ноутбуці"
                 width="370"
+                loading="lazy"
               />
               <div class="overlay">
                 <p class="overlay__text">Мобільні додатки</p>
@@ -166,9 +176,14 @@
             </li>
             <li class="work-list__item">
               <img
-                src="./images/box3.jpg"
+                srcset="
+                  ./images/box/box-3@1x-min.jpg 1x,
+                  ./images/box/box-3@2x-min.jpg 2x
+                "
+                src="./images/box/box-3@1x-min.jpg"
                 alt="Вибір кольору на планшеті"
                 width="370"
+                loading="lazy"
               />
               <div class="overlay">
                 <p class="overlay__text">Дизайнерські рішення</p>
@@ -183,12 +198,43 @@
         <div class="team__container container">
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                class="team-list__image"
-                src="./images/ihor.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/ihor/ihor-270-@1x-min.jpg 1x,
+                    ./images/team/ihor/ihor-270-@2x-min.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/ihor/ihor-354-@1x-min.jpg 1x,
+                    ./images/team/ihor/ihor-354-@2x-min.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/ihor/ihor-450-@1x-min.jpg 1x,
+                    ./images/team/ihor/ihor-450-@2x-min.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-list__image"
+                  src="./images/team/ihor/ihor-450-@1x-min.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-div">
                 <h3 class="team-div__title">Ігор Дем'яненко</h3>
                 <p class="team-div__p" lang="en">Product Designer</p>
@@ -249,12 +295,43 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__image"
-                src="./images/olha.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-              />
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/olga/olga-270-@1x-min.jpg 1x,
+                    ./images/team/olga/olga-270-@2x-min.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/olga/olga-354-@1x-min.jpg 1x,
+                    ./images/team/olga/olga-354-@2x-min.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/olga/olga-450-@1x-min.jpg 1x,
+                    ./images/team/olga/olga-450-@2x-min.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-list__image"
+                  src="./images/team/olga/olga-450-@1x-min.jpg"
+                  alt="Ольга Рєпіна"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-div">
                 <h3 class="team-div__title">Ольга Рєпіна</h3>
                 <p class="team-div__p" lang="en">Frontend Developer</p>
@@ -315,12 +392,43 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__image"
-                src="./images/mykola.jpg"
-                alt="Микола Тарасов"
-                width="270"
-              />
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/mukola/mukola-270-@1x-min.jpg 1x,
+                    ./images/team/mukola/mukola-270-@2x-min.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/mukola/mukola-354-@1x-min.jpg 1x,
+                    ./images/team/mukola/mukola-354-@2x-min.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/mukola/mukola-450-@1x-min.jpg 1x,
+                    ./images/team/mukola/mukola-450-@2x-min.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-list__image"
+                  src="./images/team/mukola/mukola-450-@1x-min.jpg"
+                  alt="Микола Тарасов"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-div">
                 <h3 class="team-div__title">Микола Тарасов</h3>
                 <p class="team-div__p" lang="en">Marketing</p>
@@ -381,12 +489,43 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__image"
-                src="./images/muhailo.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/muhailo/muhailo-270-@1x-min.jpg 1x,
+                    ./images/team/muhailo/muhailo-270-@2x-min.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/muhailo/muhailo-354-@1x-min.jpg 1x,
+                    ./images/team/muhailo/muhailo-354-@2x-min.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/muhailo/muhailo-450-@1x-min.jpg 1x,
+                    ./images/team/muhailo/muhailo-450-@2x-min.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team-list__image"
+                  src="./images/team/muhailo/muhailo-450-@1x-min.jpg"
+                  alt="Михайло Єрмаков"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-div">
                 <h3 class="team-div__title">Михайло Єрмаков</h3>
                 <p class="team-div__p" lang="en">UI Designer</p>
@@ -744,16 +883,44 @@
       </ul>
       <ul class="mobile-socials list">
         <li class="mobile-socials-item">
-          <a class="mobile-socials-link link" href="">Instagram</a>
+          <a
+            class="mobile-socials-link link"
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="іконка instagram"
+            >Instagram</a
+          >
         </li>
         <li class="mobile-socials-item">
-          <a class="mobile-socials-link link" href="">Twitter</a>
+          <a
+            class="mobile-socials-link link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="іконка twitter"
+            >Twitter</a
+          >
         </li>
         <li class="mobile-socials-item">
-          <a class="mobile-socials-link link" href="">Facebook</a>
+          <a
+            class="mobile-socials-link link"
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="іконка facebook"
+            >Facebook</a
+          >
         </li>
         <li class="mobile-socials-item">
-          <a class="mobile-socials-link link" href="">LinkedIn</a>
+          <a
+            class="mobile-socials-link link"
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener norefferer"
+            aria-label="іконка linkedin"
+            >LinkedIn</a
+          >
         </li>
       </ul>
     </div>
