@@ -30,7 +30,7 @@
       url(../images/hero/hero-img-480-@2x.jpg);
   }
   // Tablet screen
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -48,7 +48,7 @@
     }
   }
   // Desktop screen
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -74,10 +74,13 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
-  // width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 1199.98px) {
+    max-width: 360px;
+  }
 
   @media screen and (min-width: 1200px) {
     font-size: 44px;
