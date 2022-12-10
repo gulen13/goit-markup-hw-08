@@ -165,7 +165,7 @@ body {
 
 .mobile-menu {
   padding: 0;
-  margin: 0;
+  margin-bottom: auto;
   list-style: none;
   margin-bottom: auto;
 }
@@ -1145,7 +1145,7 @@ header {
 }
 @media screen and (max-width: 449.98px) {
   .modal {
-    width: 100vw;
+    width: 96vw;
   }
 }
 
