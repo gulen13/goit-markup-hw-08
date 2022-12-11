@@ -183,20 +183,26 @@ body {
   margin-bottom: 32px;
 }
 
-.mobile-menu-link--current {
-  color: var(--main-logo-button-color);
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-}
-
 .mobile-menu-link {
   font-weight: 500;
-  font-size: 40px;
+  font-size: 8vw;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+}
+.mobile-menu-link--current {
+  color: var(--main-logo-button-color);
+  font-size: 8vw;
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu-link--current {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu-link {
+    font-size: 40px;
+  }
 }
 
 .menu-container .menu-toggle {
@@ -207,10 +213,15 @@ body {
 
 .mobile-contacts-link-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 7vw;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--main-logo-button-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile-contacts-link-tel {
+    font-size: 34px;
+  }
 }
 
 .mobile-contacts-item-tel {
@@ -219,10 +230,15 @@ body {
 
 .mobile-contacts-link-mail {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 5vw;
   line-height: 28px;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile-contacts-link-mail {
+    font-size: 24px;
+  }
 }
 
 .mobile-contacts-item-mail {
