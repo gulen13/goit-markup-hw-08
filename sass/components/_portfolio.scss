@@ -1,8 +1,5 @@
 .portfolio-btn-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  @include flex(flex, flex-start, false, wrap);
   gap: 8px;
   margin-bottom: 40px;
 
