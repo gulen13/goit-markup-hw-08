@@ -12,3 +12,8 @@
     flex-wrap: $fw;
   }
 }
+
+@mixin section($pt: 60px, $pb: $pt) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
